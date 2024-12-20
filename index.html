@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="navtitle">Expense Tracker </h1>
+        </nav>
+    </header>
+
+        <div class="input">
+            <label for="category-select">Category :</label>
+            <select  id="category-select">
+                <option value="Food & Beverage">Food & Beverage</option>
+                <option value="Rent">Rent</option>
+                <option value="Transport">Transport</option>
+                <option value="Weekend">Weekend</option>
+            </select>
+            <label for="Amount">Amount :</label>
+            <input type="number" id="Amount">
+            <label for="date">Date :</label>
+            <input type="date" id="date">
+            <button id="add-btn">Add</button>
+        </div>
+        <div class="expense_list">
+            <h2> Expense List </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="Expense-table">
+                </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Total:</td>
+                            <td id="total-amount"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                
+            </table>
+        </div>
+        <script src="function.js"></script>
+</body>
+</html>
